@@ -1,0 +1,29 @@
+{% block style %}
+<style>
+    .dropdown-menu>a {
+        color: white !important;
+    }
+
+    .dropdown-menu>a:hover {
+        background: rgba(66, 65, 65, 0.5) !important;
+    }
+
+    .bg-dropdown {
+        background: rgba(0, 0, 0, 0);
+    }
+</style>
+{% endblock %}
+
+<div class="top">
+    <div class="full">
+        <div class="container">
+            {% block menu %}
+            {% include "partials/menu.html" %}
+            {% endblock %}
+        </div>
+    </div>
+    <div class="main-desc text-light font">
+        <p class="display-1">Mohammad Fatoni</p>
+        <p class="h1">Web Developer</p>
+    </div>
+</div>

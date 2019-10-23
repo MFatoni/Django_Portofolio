@@ -1,0 +1,32 @@
+{% extends "layout/base.html" %}
+{% load staticfiles %}
+
+{% block header %}
+{% include "partials/header_porto.html" %}
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="my-5 row">
+        <div class="titlecontent1 mx-3">
+            <div class="anti-miring font1">Project &ensp;I</div>
+        </div>
+        <div class="p-2">
+            <p class="text-center"> Website penjurnalan otomatis (PHP Native)</p>
+            <img src="{% static 'img/p2.png' %}" class="img-fluid">
+        </div>
+    </div>
+    <div class="my-5 row">
+        <div class="titlecontent1 mx-3">
+            <div class="anti-miring font1">Project &ensp;II</div>
+        </div>
+        <div class="p-2">
+            <p class="text-center"> Website E-commerce (PHP Native)</p>
+            <img src="{% static 'img/p1.jpg' %}" class="img-fluid">
+        </div>
+    </div><br />
+</div>
+{% endblock %}
+{% block footer %}
+{% include "partials/footer.html" %}
+{% endblock %}

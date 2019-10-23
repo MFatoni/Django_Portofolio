@@ -1,0 +1,150 @@
+@font-face {
+    font-family: 'font';
+    src: url("../fonts/Brilliantte.ttf")
+}
+.font {
+    font-family: font;
+}
+.font1 {
+    font-family: font;
+    font-size: 1.5em;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body, html {
+    width: 100%;
+    height: 100%;
+}
+.full-page {
+    width: 100%;
+    height: 100%;
+}
+.h-95 {
+    width: 100%;
+    height: 95%;
+}
+.top {
+    background: url('../img/bg4.jpg') center / cover;
+}
+.top {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.main-desc {
+    position: absolute;
+    width: 100%;
+    top: 45%;
+    text-align: center;
+    z-index: 1;
+}
+.subheader1 img {
+    width: 80%;
+    margin: 0px 10%;
+    border-radius: 40px 0px 40px 0px;
+    background-image: linear-gradient(#290639,#2b1041,white);
+    background: linear-gradient(-40deg, #391f57 1%,#1c0429 48%,#391f57 100%);
+}
+.top1 > img {
+    width: 100%;
+    height: 100%
+}
+.subheader1info {
+    margin: 10%
+}
+.titlecontent1 {
+    background:linear-gradient(black,#59595b);
+    padding: 10px; 
+    width: 100%;
+    transform: skew(20deg);
+    color: white;
+    text-align: center;
+}
+.anti-miring{
+    transform: skew(-20deg);
+}
+.tombol > button{
+    width: 200px;
+    color: white;
+}
+.tombol a{
+    color: white;
+    text-decoration: none
+}
+.tombol a:hover{
+    color: #cdcdcd;
+    text-decoration: none
+}
+.linkedin a{
+    text-decoration: none;
+    color: white;
+}
+.linkedin a:hover{
+    color:lavender;
+}
+.display2 {
+    display: none;
+}
+.bg-hitam {
+    background: #232526
+}
+@media only screen and (max-width: 992px) {
+	.hide {
+        display: none;
+    }
+	.top2 {
+        text-align: center;
+    }
+	.minim >p {
+        font-size: 14px
+    }
+    .top2 > img {
+        height: 100%;
+        width: 25%
+    }
+    .icon-hide {
+        display: none;
+    }
+    .hidden-center{
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .font > .display-1 {
+        font-size: 4em ;
+    }
+    .font > .h1 {
+        font-size: 3.5em ;
+    }
+}
+@media only screen and (max-width: 575px) {
+    .display2 {
+        display: initial;
+    }
+    .display1 {
+        display: none;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .font > .display-1 {
+        font-size: 3em ;
+    }
+    .font > .h1 {
+        font-size: 2.5em ;
+    }
+}
+@media only screen and (max-width: 376px) and (max-height: 800px) {
+	.subheader1 img {
+        margin: 0px;
+        border-radius: 20px 0px 20px 0px;
+        background-image: linear-gradient(#290639,#2b1041,white);
+        background: linear-gradient(-40deg, #391f57 1%,#1c0429 48%,#391f57 100%);
+    }
+    .h-95 {
+        width: 100%;
+        height: 70%;
+        margin-bottom: 20%;
+    }
+}

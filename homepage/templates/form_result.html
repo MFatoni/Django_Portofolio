@@ -1,0 +1,23 @@
+{% extends "layout/base.html" %}
+{% load staticfiles %}
+
+{% block header %}
+{% include "partials/header_about.html" %}
+{% endblock %}
+
+{% block content %}
+<div class="container h-75">
+    <div class="row flex h-100">
+        <div id="col" class="col-md-6 align-self-center mx-auto">
+            <h2 class="text-center font">Pesan dari {{ name }}</h2>
+            <hr />
+            <textarea readonly rows="5" class="form-control">&quot;{{message}}&quot;-{{name}} 
+                    by {{ email }}
+                </textarea>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block footer %}
+{% include "partials/footer-fixed.html" %}
+{% endblock %}

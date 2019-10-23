@@ -1,0 +1,50 @@
+{% extends "layout/base.html" %}
+{% load staticfiles %}
+
+{% block header %}
+{% include "partials/header_table.html" %}
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row pt-3 ">
+        <div class="col-12">
+            <h2 class="text-center font p-3">My Message</h2>
+        </div>
+        <div class="table-responsive">
+            <table class="table">
+                <thead class="thead-dark">
+                    <th>Nama</th>
+                    <th>Email</th>
+                    <th>Pesan</th>
+                    <th>Dibuat Pada</th>
+                </thead>
+                <tbody>
+                    <!-- TODO, Kalau nama/email anon maka tr classnya jadi warning -->
+                    {% for i in message %}
+                    {% if i.name == 'Anonymous' or i.email == 'Anonymous' %}
+                    <tr class="bg-danger">
+                        <td> {{i.name}} </td>
+                        <td> {{i.email}} </td>
+                        <td> {{i.message}} </td>
+                        <td> {{i.created_date}} </td>
+                    </tr>
+                    {% else %}
+                    <tr>
+                        {% endif %}
+                        <td> {{i.name}} </td>
+                        <td> {{i.email}} </td>
+                        <td> {{i.message}} </td>
+                        <td> {{i.created_date}} </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</div>
+{% endblock %}
+{% block footer %}
+{% include "partials/footer.html" %}
+{% endblock %}
